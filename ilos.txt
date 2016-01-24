@@ -1,0 +1,6 @@
+1) Students will be comfortable opening binaries in IDA
+2) Understand that binaries are structured files, including segments and symbols
+3) Be comfortable changing data and code
+4) Be able to read some basic assembly paths
+5) Be comfortable doing assembly-level debugging (stretch 1)
+5) Be able to determine the structure of data in programs and use it (stretch 2)
