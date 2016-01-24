@@ -1,0 +1,7 @@
+all: crackme1
+
+crackme1:
+	$(CC) -o crackme1 crackme.cpp
+
+clean:
+	rm crackme1
