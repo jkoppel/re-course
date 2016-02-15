@@ -22,12 +22,23 @@ void boom() {
   exit(1);
 }
 
+char *readStr() {
+#ifdef __APPLE__
+  // Got segfault using %ms on Mac; being lazy about fixing it
+  char *buf = (char*)malloc(100 * sizeof(char));
+  scanf("%s", buf);
+#else
+  char *buf;
+  scanf("%ms", &buf);
+#endif
+
+  return buf;
+}
 
 void phase1() {
   printf("Gimme the password: ");
 
-  char *buf;
-  scanf("%ms", &buf);
+  char *buf = readStr();
 
   if (strcmp(buf, "god") == 0) {
     printf("Phase 1 passed\n");
@@ -46,8 +57,7 @@ int mystery(int x) {
 void phase2() {
   printf("Password #2? ");
 
-  char *buf;
-  scanf("%ms", &buf);
+  char *buf = readStr();
 
   bool passed = false;
 
