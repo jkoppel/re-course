@@ -1,0 +1,3 @@
+For Mac users:
+
+For some reason, on Mac, the file compiled to more complicated assembly. We recommend reverse-engineering the Linux version (you can test your ideas by running the Mac version).
