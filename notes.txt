@@ -40,3 +40,4 @@ Todos:
 *) Add a place just to talk about the understanding that comes with RE (+ ability to cut through layers of abstraction and debug the hardest bugs)
 *) Find the other clip from Hackers, where "Plague" talks about commonly used passwords
 *) Find good Mac/Linux crackmes for anyone who finishes early
+*) Fix errant AT&T syntax in the second footnote of the cheatsheet
