@@ -1,0 +1,42 @@
+Plan:
+
+0) Offer handouts (x86 cheat sheet + IDA cheat sheet), ask to sign in, point to URL and ask them to set up IDA + download crackmes
+1) Introduce instructors. "Reverse engineering is awesome"
+2) Assembly crash course
+3) Open crackme0. Run it. Explain our goal to make it let us in. Talk about figuring out what it does. Show patching it to let us in.
+4) Declare a time when they'll be interrupted for Project Ironfist demo + a video
+5) Explain what Bomb Lab is, and how it inspired crackme1. Let them loose to begin figuring out crackme1.
+6) Instructors walk around and help students
+7) Midway through, interrupt, show Hackers video, demo Project Ironfist and how the modding works
+8) Resume 5/6
+
+People who finish early: Can offer WinMine as a more interesting program to reverse, or crackmes.cf
+
+How to teach assembly crash course:
+
+Give examples of everything. Use IDA debugger; show changing registers/memory as you run each line
+
+1) Registers (mov, add, sub, ...)
+2) Memory dereferences
+3) Stack (push, call, ret, ebp, esp)
+4) Control flow (flags [show changing after each instruction], cmp/test, jg/jge/jmp)
+
+This is a good place to split up work among instructors.
+
+Notes on demo'ing crackme0:
+
+* The Windows version of crackme0 has debug symbols in a separate file, which we don't distribute. Not having debug symbols is a blessing in disguise; gives a chance to show off searching for strings and using cross-references.
+
+Resources:
+
+Four most commonly used passwords: https://www.youtube.com/watch?v=0Jx8Eay5fWQ
+
+http://tinyurl.com/sipb-re-course
+
+Todos:
+
+*) Add pseudocode for ops to x86 cheat sheet
+*) Make slides with a single image for Apptimize (espionage) and IBM PC (compatibility) stories
+*) Add a place just to talk about the understanding that comes with RE (+ ability to cut through layers of abstraction and debug the hardest bugs)
+*) Find the other clip from Hackers, where "Plague" talks about commonly used passwords
+*) Find good Mac/Linux crackmes for anyone who finishes early
