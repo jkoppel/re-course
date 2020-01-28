@@ -1,7 +1,14 @@
-Plan:
+Before the course:n
+
+1) Make sure to request a new trial of IDA
+2) Print handouts
+3) Review with co-instructor(s): plan below, and the assembly crash course plan
+
+Plan during course:
+
 
 0) Offer handouts (x86 cheat sheet + IDA cheat sheet), ask to sign in, point to URL and ask them to set up IDA + download crackmes
-1) Introduce instructors. "Reverse engineering is awesome"
+1p) Introduce instructors. "Reverse engineering is awesome"
 2) Assembly crash course
 3) Open crackme0. Run it. Explain our goal to make it let us in. Talk about figuring out what it does. Show patching it to let us in.
 4) Declare a time when they'll be interrupted for Project Ironfist demo + a video
@@ -18,26 +25,34 @@ Give examples of everything. Use IDA debugger; show changing registers/memory as
 
 1) Registers (mov, add, sub, ...)
 2) Memory dereferences
-3) Stack (push, call, ret, ebp, esp)
+3) Stack (push, call, ret, ebp, esp. Don't forget to discuss eax)
 4) Control flow (flags [show changing after each instruction], cmp/test, jg/jge/jmp)
 
 This is a good place to split up work among instructors.
 
-Notes on demo'ing crackme0:
+Notes on crackmes:
 
 * The Windows version of crackme0 has debug symbols in a separate file, which we don't distribute. Not having debug symbols is a blessing in disguise; gives a chance to show off searching for strings and using cross-references.
+* The 64-bit Mac version is there because Catalina does not run 32-bit executables. They should still RE the 32-bit one, but can run the 64-bit.
 
 Resources:
 
-Four most commonly used passwords: https://www.youtube.com/watch?v=0Jx8Eay5fWQ
+Four most commonly used passwords:
+* Cool mention: https://www.youtube.com/watch?v=RiMt9_01SkY (starts 10 seconds in)
+* Other mention: https://www.youtube.com/watch?v=0Jx8Eay5fWQ
 
 http://tinyurl.com/sipb-re-course
 
+Notes to self:
+
+*) The x86 cheat sheet source is in Google docs
+
 Todos:
 
+*) Add movsx and movzx to the cheat sheet
 *) Add pseudocode for ops to x86 cheat sheet
 *) Make slides with a single image for Apptimize (espionage) and IBM PC (compatibility) stories
 *) Add a place just to talk about the understanding that comes with RE (+ ability to cut through layers of abstraction and debug the hardest bugs)
-*) Find the other clip from Hackers, where "Plague" talks about commonly used passwords
 *) Find good Mac/Linux crackmes for anyone who finishes early
-*) Fix errant AT&T syntax in the second footnote of the cheatsheet
+*) Some versions of round 1 in crackme1 are easier than others; investigate.
+*) Have a better answer for people who ask about setting up debugger on Mac/Linux.
